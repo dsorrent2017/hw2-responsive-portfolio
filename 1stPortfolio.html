@@ -1,0 +1,362 @@
+<!-- Questions from in class exercise Bootstrap-Powered HTML -->
+
+<!-- Students:
+  1. Where is the HTML document drawing its styles from?
+  Bootstrap and font-awesome
+
+  2. How does our browser know which element to style in which way? (ex: button face or background banner)
+  The browser followws the "class" into css files and resolves it that way.
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Coding Boot Camp!</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- Container Div -->
+  <div class="container">
+
+    <!-- Section 1: Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <!-- Our brand / logo -->
+      <a class="navbar-brand" href="#">Dan Sorrentino's Project Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <!-- Collapsible button -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+
+          <!-- The links of our navbar -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+
+          <!-- a Dropdown menu -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron element -->
+    <div class="jumbotron">
+
+      <!-- centered text -->
+      <h1 class="text-center"><strong>Portfolio of My Projects</strong></h1>
+      <h2 class="text-center">Full Stack Developer's Bootcamp</h2>
+      <h3 class="text-center">University of Central Florida</h3>
+
+    </div>
+
+    <!-- a Bootstrap row with columns -->
+    <div class="row">
+
+      <!-- At large+ screens takes up half width (6/12) -->
+        <!-- centered image with thumbnail rules src="http://legacy.nerdywithchildren.com/wp-content/uploads/2013/06/ComfyChildKeyboard.jpg" alt="KidComputer" 
+            src="https://images.unsplash.com/photo-1477453559950-e541fa922120" alt="LittleCoder"
+        -->
+      <div class="col-lg-6">
+        <img class="img thumbnail center-block" src="./images/digital-marketing-meeting.jpg"  width="50%">
+        <p>Digital Marketing Project using ReactJS in Front End and NodeJS with Express as the server </p>
+      </div>
+
+      <!-- At large+ screens takes up half width (6/12) -->
+      <div class="col-lg-6">
+        <img class="img thumbnail center-block" src="./images/online-reputation-management.jpg" width="50%">
+        <p>Digital Marketing Project using ReactJS in Front End and NodeJS with Express as the server </p>
+      </div>
+      
+    </div>
+
+    <div class="row">
+
+        <!-- At large+ screens takes up half width (6/12) -->
+          <!-- centered image with thumbnail rules src="http://legacy.nerdywithchildren.com/wp-content/uploads/2013/06/ComfyChildKeyboard.jpg" alt="KidComputer" 
+              src="https://images.unsplash.com/photo-1477453559950-e541fa922120" alt="LittleCoder"
+          -->
+        <div class="col-lg-6">
+          <img class="img thumbnail center-block" src="./images/digital-marketing-meeting.jpg"  width="50%">
+          <p>Digital Marketing Project using ReactJS in Front End and NodeJS with Express as the server </p>
+        </div>
+  
+        <!-- At large+ screens takes up half width (6/12) -->
+        <div class="col-lg-6">
+          <img class="img thumbnail center-block" src="./images/online-reputation-management.jpg" width="50%">
+          <p>Digital Marketing Project using ReactJS in Front End and NodeJS with Express as the server </p>
+        </div>
+        
+      </div>
+      
+    
+      <div class="row">
+
+        <div class="col-lg-6">
+          <img class="img thumbnail center-block" src="./images/search-engine-optimization.jpg"  width="50%">
+          <p>Search Engine Optimization Project using ReactJS in Front End and NodeJS with Express as the server </p>
+        </div>
+  
+        <!-- At large+ screens takes up half width (6/12) -->
+        <div class="col-lg-6">
+          <img class="img thumbnail center-block" src="./images/social-media-marketing.jpg" width="50%">
+          <p>Digital Marketing Project using ReactJS in Front End and NodeJS with Express as the server </p>
+        </div>
+        
+      </div>
+      
+      <div class="row">
+
+        <div class="col-lg-6">
+          <img class="img thumbnail center-block" src="./images/search-engine-optimization.jpg"  width="50%">
+          <p>Search Engine Optimization Project using ReactJS in Front End and <strong>SpringBoot and MongoDB</strong> at the server </p>
+        </div>
+  
+        <!-- At large+ screens takes up half width (6/12) -->
+        <div class="col-lg-6">
+          <img class="img thumbnail center-block" src="./images/brand-awareness.png" width="50%">
+          <p>Brand Awareness Project using ReactJS using ReactJS in Front End and <strong>SpringBoot and MongoDB</strong> at the server </p>
+        </div>
+        
+      </div>
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
