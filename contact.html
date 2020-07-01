@@ -1,50 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Boot Camp!</title>
-  
-    <!-- We link our html to the Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
- 
-</head>
-<body>
-    <div class="container">
+<html>
 
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-         
-          <a class="navbar-brand" href="#">Dan Sorrentino's Project Portfolio</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-    
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
+      <meta name = "apple-mobile-web-app-capable" content = "yes" />
+      <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
+      <title>List View Contacts List</title>
+      <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
+      <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
       
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-        
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio </a>
-                  </li>
-        
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacts<span class="sr-only">(current)</span></a>
-                  </li>
-    
-            </ul>
-          </div>
-        </nav>
-    </container>
-    <h1>contact.html</h1>
-</body>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./style.css">
+   </head>
+
+   <body>
+      <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <a class="navbar-brand" href="#">Dan Sorrentino's Project Portfolio</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="index.html">Home </a>
+               </li>
+     
+               <li class="nav-item">
+                 <a class="nav-link" href="portfolio.html">Portfolio</a>
+               </li>
+     
+               <li class="nav-item">
+                 <a class="nav-link" href="contact.html">Contacts<span class="sr-only">(current)</span></a>
+               </li>
+             </ul>
+           </div>
+         </nav>
+      </div>
+
+      <div class = "views">
+         <div class = "view view-main">
+         
+            <div class = "navbar">
+               <div class = "navbar-inner">
+                  <div class = "center sliding">List View Contacts List</div>
+               </div>
+            </div>
+            
+            <div class = "pages navbar-through">
+               <div data-page = "index" class = "page navbar-fixed">
+                  <div class = "page-content contacts-content">
+                  
+                     <div class = "list-block contacts-block">
+                        <div class = "list-group">
+                           <ul>
+                              <li class = "list-group-title">A</li>
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Abbey</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Alan</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Ann</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Aaron</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Alan</div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                        
+                        <div class = "list-group">
+                           <ul>
+                              <li class = "list-group-title">B</li>
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Bernie</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Bob</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Berri</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Bobby</div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                        
+                        <div class = "list-group">
+                           <ul>
+                              <li class = "list-group-title">C</li>
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Charlie</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Chuck</div>
+                                    </div>
+                                 </div>
+                              </li>
+
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Cindy</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+ 
+                              
+                              
+                           </ul>
+                        </div>
+                        
+                        <div class = "list-group">
+                           <ul>
+                              <li class = "list-group-title">D</li>
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">David</div>
+                                    </div>
+                                 </div>
+                              </li>
+                              
+                              <li>
+                                 <div class = "item-content">
+                                    <div class = "item-inner">
+                                       <div class = "item-title">Derrik</div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <script type = "text/javascript" 
+         src = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
+      
+      <script>
+         // here initialize the app
+         var myApp = new Framework7();
+
+         // If your using custom DOM library, then save it to $$ variable
+         var $$ = Dom7;
+
+         // Add the view
+         var mainView = myApp.addView('.view-main', {
+         
+            // enable the dynamic navbar for this view
+            dynamicNavbar: true
+         });
+      </script>
+   </body>
+
 </html>

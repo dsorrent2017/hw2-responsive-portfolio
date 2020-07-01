@@ -10,25 +10,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        .bg-1 {
+          background-color: #1abc9c; /* Green */
+          color: #ffffff;
+        }
+ 
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-
-    
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-         
           <a class="navbar-brand" href="#">Dan Sorrentino's Project Portfolio</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-    
-          
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-    
-      
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -40,11 +47,29 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contacts</a>
               </li>
-    
             </ul>
           </div>
         </nav>
     </container>
-    <h1>index.html</h1>
+
+    <div class="container-fluid bg-1 text-center">
+        <h3>Dan Sorrentino's Portfolio</h3>
+        <img src="./images/bird150.jpg" class="img-circle" alt="Bird">
+         <h3>On a journey to awesomeness</h3>
+      </div>
+      
+      <div class="container-fluid bg-2 text-center">
+        <h3>Resume Highlights</h3>
+        <p>An experienced Software Engineer with roles including Full Stack Developer, Solution Architect, Technical Project Manager, Development Team Manager</p>
+      </div>
+      
+      <div class="container-fluid bg-3 text-center">
+        <h3>Contact information</h3>
+        <p>Email: dsorrent7@gmail.com</p>
+        <p>Phone: 585-305-4023</p>
+        <p>Home: Winter Garden Florida</p>
+        <p><strong><i>linkedin.com/in/Daniel-Sorrentino</i></strong> </p>
+
+      </div>
 </body>
 </html>
